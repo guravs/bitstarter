@@ -5,9 +5,9 @@ var file = "index.html";
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-//  response.send('Hello World2!');
-  var buff = fs.readFileSync(file, 'utf8');
-  response.write(	buff.toString('utf-8'));
+  response.send('Hello World2!');
+//  var buff = fs.readFileSync(file, 'utf8');
+//  response.write(	buff.toString('utf-8'));
   response.end();
 });
 
